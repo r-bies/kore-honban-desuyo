@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "これ本番ですよ",
+  "description": "AWSコンソールがプロダクション環境(東京リージョン)の場合に警告を表示します",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.console.aws.amazon.com/*"],
+      "js": ["jquery.min.js", "script.js"]
+    }
+  ]
+}
